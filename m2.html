@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="styles3.css">
+  
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="menu-header">
+            <img src="house-apartment-logo-blue-png-transparent.png" alt="Logo" class="logo">
+            <button class="close-btn" onclick="toggleMenu()">✖</button>
+        </div>
+        <ul class="menu">
+            <li><a href="find my home.html">Find a Home</a></li>
+            <li><a href="First Time Buyers Guide.html">Buying with DWH</a></li>
+            <li><a href="Great Range of Homes.html">Schemes & Offers</a></li>
+            <li><a href="Home Buying Guides.html">The Buying Process</a></li>
+            <li><a href="Advice and Inspiration Hub.html">Advice & Inspiration</a></li>
+            <li class="owners-hub"><a href="Owners Hub.html">👤 Owners Hub</a></li>
+        </ul>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <script src="jquery.js"></script>
+    <script>
+         $("#menubtn").click(function(){
+            $("#menu").toggle();
+         });
+    </script>
+</body>
+</html>

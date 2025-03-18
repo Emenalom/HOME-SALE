@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white; /*channged the background color to white*/
+}
+
+/* Header */
+header {
+    background: rgb(8, 8, 58);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.logo img {
+    width: 70px;
+    position: center;
+    align-items: center;
+
+   
+}
+.logo a {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Aligns items horizontally */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;   
+    padding: 7px;
+    margin: 10px;
+    font-size: 10px;
+    background-color: #002b5c;
+    border-radius: 10px;
+    width: 100px;
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+ 
+  .desktop{
+    display: flex;
+    
+  }
+  .mobile{
+     display:none; 
+     
+  }
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center/cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+        background-image: url('001-dwem_mickleover_derby_layton_moorecroft_cornell_4bed_5bed-1200x570.jpg'); /* Replace with your image name */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+  
+
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    color: beige;
+    padding: 20px;
+    border: 2px solid white; /* Adjust color and thickness */
+
+}
+.hero-content a {
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    border: 2px solid white; /* Adjust color and thickness */
+   text-decoration: brown;
+   background-color: #d9534f;
+}
+.btn  {
+    background: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    padding: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #002b5c;
+
+}
+
+.info-box {
+    background: rgba(1, 1, 60, 0.89);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+}
+.info-box li a{
+    color: white;
+    text-decoration: none;
+    background-color: #d9534f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid white; /* Adjust color and thickness */
+}
+
+/* Footer */
+footer {
+    background: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        background: #002b5c;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav ul.show {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+    
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+footer {
+    background-color: #f8f8f8;
+    padding: 30px 50px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
